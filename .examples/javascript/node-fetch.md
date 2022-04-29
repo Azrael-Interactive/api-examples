@@ -1,6 +1,6 @@
 ### GET
 ```javascript
- fetch('https://azrael.gg/api/v2/get/641795527444529152', {
+ fetch('https://api.azrael.gg/v5/get/933402903937437696', {
          method: 'GET',
          headers: {
              'Authorization': 'Your Bearer Token',
@@ -12,9 +12,9 @@
 ```
 ### POST
 ```javascript
-const body = { id: '641795527444529152', reason: 1, proof: 'https://cdn.azrael.gg' };
+const body = { id: '933402903937437696', reason: 1, proof: 'https://cdn.azrael.gg' };
 
-fetch('https://azrael.gg/api/v2/add', {
+fetch('https://api.azrael.gg/v5/bans/add', {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
@@ -27,9 +27,9 @@ fetch('https://azrael.gg/api/v2/add', {
 ```
 ### PATCH
 ```javascript
-const body = { id: '641795527444529152', type: 'Notes', value: 'There are no notes' };
+const body = { id: '933402903937437696', type: 'Notes', value: 'There are no notes' };
 
-fetch('https://azrael.gg/api/v2/edit', {
+fetch('https://api.azrael.gg/v5/edit', {
         method: 'PATCH',
         body: JSON.stringify(body),
         headers: {
@@ -42,7 +42,7 @@ fetch('https://azrael.gg/api/v2/edit', {
 ```
 ### DELETE
 ```javascript
- fetch('https://azrael.gg/api/v2/delete/641795527444529152', {
+ fetch('https://api.azrael.gg/v5/delete/933402903937437696', {
          method: 'DELETE',
          headers: {
              'Authorization': 'Your Bearer Token',
